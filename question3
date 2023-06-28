@@ -1,0 +1,42 @@
+const mysql = require('mysql') const connectionX = mysql.createConnection(
+  { host: 'localhost',
+  user: 'root',
+  PASSWORD: 'demo1234',
+  DATABASE: 'myphp' }
+) var SQL = "INSERT INTO Test (email, name) VALUES ?";
+
+const customers = [{
+    email : "anurag11@yopmail.com" ,
+    name : "anurag"
+    },
+    {
+    email : "sameer11@yopmail.com" ,
+    name : "sameer"
+    },
+    {
+    email : "ravi11@yopmail.com" ,
+    name : "ravi"
+    },
+    {
+    email : "akash11@yopmail.com" ,
+    name : "akash"
+    },
+    {
+    email : "anjali11@yopmail.com" ,
+    name : "anjai"
+    },
+    {
+    email : "santosh11@yopmail.com" ,
+    name : "santosh"
+    },
+    ] connectionX.query(
+  SQL,
+  VALUES
+,
+    FUNCTION(err) { IF (err) throw err;
+
+connectionX.
+END();
+
+}
+);
